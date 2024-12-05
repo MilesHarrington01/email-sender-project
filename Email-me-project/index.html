@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email sender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Send me an email</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="308245b3-517f-432b-9b16-8b3881992b5f">
+        <div class="subject-container">
+            <label for="subject">
+                Subject
+            </label>
+            <input type="text" id="subject" required>
+        </div>
+
+
+        <div class="message-container">
+            <label for="message">
+                Message
+            </label>
+            <textarea name="message" id="messsage" required></textarea>
+        </div>
+
+        <!-- Honeypot spam protection-->
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <button name="submit" type="submit">
+            Submit
+        </button>
+    
+    </form>
+</body>
+</html>

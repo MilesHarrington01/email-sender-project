@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FCA311;
+    gap: 10px;
+}
+
+form {
+    max-width: 550px;
+    height: 550px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+div input, textarea {
+    background-color: #E5E5E5;
+    border: none;
+}
+
+button {
+    background-color: #14213D;
+    border: none;
+    height: 37px;
+    max-width: 146px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+div input {
+    height: 40px;
+    width: 390px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+textarea {
+    max-width: 400px;
+    height: 220px;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+div.subject-container {
+    position: relative;
+    bottom: 30px
+}
+
+h1 {
+    font-weight: 400;
+
+}
+
+@media screen and (max-width: 569px){
+    body {
+        gap: 2px;
+    }
+    
+    form {
+        width: 238px;
+        padding: 30px 0px 0px 30px;
+        height: 404px;
+        gap: 2px;
+        
+    }
+
+    form input {
+        width: 136px;
+        height: 32px;
+        border-radius: 6px;
+        
+
+    }
+
+    form textarea {
+        width: 171px;
+        height: 191px;
+        border-radius: 10px;
+    }
+
+    div {
+        gap: 5px;
+    }
+
+    
+
+    label {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 5.75rem;
+        font-size: 0.75rem;
+        height: 1.8rem;
+        position: relative;
+        top: 3px
+    }
+}
+
+@media screen and ((min-width: 570px) and (max-width: 768px)){
+    form input {
+        width: 332px;
+    }
+
+    form {
+        width: 502px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    form {
+        height: 502px;
+    }
+}
+
+@media screen and ((min-width: 769px) and (max-width: 1280px)){
+    form {
+        width: 502px;
+    }
+
+    form input {
+        width: 332px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    form {
+        width: 502px;
+    }
+
+    form input {
+        width: 332px;
+    }
+}
